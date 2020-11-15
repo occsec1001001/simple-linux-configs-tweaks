@@ -39,6 +39,12 @@ sudo apt install -y sublist3r
 sudo apt-get install -y timeshift
 #sudo apt install -y software-center
 sudo apt install -y zsh
-sudo apt=get update
+curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh
+sudo ./install.sh
+rm install.sh
+sudo apt-get update
 sudo apt-get autoclean
 sudo apt-get autoremove
+echo "#git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions"
+echo "#chsh -s /bin/zsh <username>"
+echo "#sudo nano /home/username/.zshrc"
