@@ -16,8 +16,8 @@ mkdir current/wip
 mkdir current/archive
 sudo apt-get update -y
 sudo apt install -y openvpn dialog python3-pip python3-setuptools
-sudo pip3 install protonvpn-cli -y
-sudo pip3 install protonvpn-cli --upgrade -y
+sudo apt-get install protonvpn-cli -y
+sudo apt-get install protonvpn-cli --upgrade -y
 sudo apt-get install gdebi-core -y
 sudo wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
 sudo mv google-chrome-stable_current_amd64.deb /opt/google-chrome.deb
