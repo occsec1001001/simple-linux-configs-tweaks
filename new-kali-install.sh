@@ -44,6 +44,8 @@ sudo ./install.sh
 rm install.sh
 sudo apt install hcxdumptool
 sudo apt install hcxtools
+sudo apt-get install ferret
+sudo apt-get install hamster-sidejack
 sudo apt-get update
 sudo apt-get autoclean
 sudo apt-get autoremove
