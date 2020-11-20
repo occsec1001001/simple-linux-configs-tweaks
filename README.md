@@ -1,1 +1,1 @@
-# simple-linux-cheatsheets
+# simple-linux-configs & tweaks
