@@ -9,11 +9,8 @@ rm -r Pictures/
 rm -r Public/
 mkdir git
 mkdir general
-mkdir webserv
-mkdir ftpserv
-mkdir current
-mkdir current/wip
-mkdir current/archive
+mkdir Documents/htb
+mkdir Documents/vhl
 sudo apt-get update -y
 sudo apt install -y openvpn dialog python3-pip python3-setuptools
 sudo apt-get install protonvpn-cli -y
