@@ -11,6 +11,8 @@ mkdir git
 mkdir general
 mkdir Documents/htb
 mkdir Documents/vhl
+mkdir Documents/projects
+sudo setxkbmap -layout gb
 sudo apt-get update -y
 sudo apt install -y openvpn dialog python3-pip python3-setuptools
 sudo apt-get install protonvpn-cli -y
@@ -32,17 +34,17 @@ sudo apt-get install python3-pip -y
 #curl https://sdk.cloud.google.com | bash
 #sleep 10
 #exec -l $SHELL
-sudo apt install -y sublist3r
-sudo apt-get install -y timeshift
+#sudo apt install -y sublist3r
+#sudo apt-get install -y timeshift
 #sudo apt install -y software-center
-sudo apt install -y zsh
-wget https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh
-sudo ./install.sh
-rm install.sh
-sudo apt install hcxdumptool
-sudo apt install hcxtools
-sudo apt-get install ferret
-sudo apt-get install hamster-sidejack
+#sudo apt install -y zsh
+#wget https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh
+#sudo ./install.sh
+#rm install.sh
+sudo apt install hcxdumptool -y
+sudo apt install hcxtools -y
+sudo apt-get install ferret -y
+sudo apt-get install hamster-sidejack -y
 sudo apt-get update
 sudo apt-get autoclean
 sudo apt-get autoremove
