@@ -48,6 +48,6 @@ sudo apt-get install hamster-sidejack -y
 sudo apt-get update
 sudo apt-get autoclean
 sudo apt-get autoremove
-echo "#git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions"
-echo "#chsh -s /bin/zsh <username>"
-echo "#sudo nano /home/username/.zshrc"
+#echo "#git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions"
+#echo "#chsh -s /bin/zsh <username>"
+#echo "#sudo nano /home/username/.zshrc"
