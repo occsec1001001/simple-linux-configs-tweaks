@@ -3,13 +3,7 @@
 deb http://http.kali.org/kali kali-rolling main contrib non-free
 deb http://http.kali.org/kali kali-last-snapshot main non-free contrib
 deb http://http.kali.org/kali kali-experimental main non-free contrib
-deb http://mirror.fsf.org/trisquel toutatis-updates InRelease
 # Additional line for source packages
 deb-src http://http.kali.org/kali kali-rolling main contrib non-free
 deb-src http://http.kali.org/kali kali-last-snapshot main non-free contrib
 deb-src http://http.kali.org/kali kali-experimental main non-free contrib
-
-
-```
-sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys
-```
