@@ -47,6 +47,7 @@ sudo apt install hcxdumptool -y
 sudo apt install hcxtools -y
 sudo apt-get install ferret -y
 sudo apt-get install hamster-sidejack -y
+sudo apt-get install linux-headers-$(uname -r)
 sudo apt-get update
 sudo apt-get autoclean
 sudo apt-get autoremove
