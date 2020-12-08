@@ -23,15 +23,16 @@ sudo apt-get install protonvpn-cli --upgrade -y
 sudo apt-get install gdebi-core -y
 sudo wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
 sudo mv google-chrome-stable_current_amd64.deb /opt/google-chrome.deb
-sudo gdebi /opt/google-chrome.deb 
+sudo gdebi /opt/google-chrome.deb
 sudo apt-get install -y joplin
 sudo git clone https://github.com/khast3x/h8mail /opt/h8mail
 sudo git clone https://github.com/leebaird/discover /opt/discover
 sudo git clone https://github.com/21y4d/nmapAutomator.git /opt/nmapAutomator
 sudo git clone https://github.com/TheRook/subbrute.git /opt/subbrute
 sudo git clone https://github.com/laramies/theHarvester.git /opt/theHarvester
-sudo git clone https://github.com/scipag/vulscan scipag_vulscan /usr/share/nmap/scripts/vulscan
+# sudo git clone https://github.com/scipag/vulscan scipag_vulscan /usr/share/nmap/scripts/vulscan
 sudo git clone https://github.com/vulnersCom/nmap-vulners.git /usr/share/nmap/scripts/
+sudo apt-get install npm -y
 #sudo systemctl enable postgresql
 #sudo systemctl enable ssh
 sudo apt-get install -y python3
