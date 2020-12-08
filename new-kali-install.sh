@@ -15,7 +15,6 @@ mkdir Documents/htb
 mkdir Documents/vhl
 mkdir Documents/projects
 mkdir insync
-sudo apt-get install icecat -y
 sudo setxkbmap -layout gb
 sudo apt-get update -y
 sudo apt install -y openvpn dialog python3-pip python3-setuptools
