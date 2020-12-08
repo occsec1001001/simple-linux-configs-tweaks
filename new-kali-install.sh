@@ -30,7 +30,8 @@ sudo git clone https://github.com/leebaird/discover /opt/discover
 sudo git clone https://github.com/21y4d/nmapAutomator.git /opt/nmapAutomator
 sudo git clone https://github.com/TheRook/subbrute.git /opt/subbrute
 sudo git clone https://github.com/laramies/theHarvester.git /opt/theHarvester
-# sudo git clone https://github.com/scipag/vulscan scipag_vulscan /usr/share/nmap/scripts/vulscan
+git clone --depth=1 https://github.com/amix/vimrc.git ~/.vim_runtime
+sh ~/.vim_runtime/install_awesome_vimrc.sh
 sudo git clone https://github.com/vulnersCom/nmap-vulners.git /usr/share/nmap/scripts/
 sudo apt-get install npm -y
 #sudo systemctl enable postgresql
