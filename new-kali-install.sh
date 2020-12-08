@@ -40,7 +40,6 @@ sudo apt-get install python3-pip -y
 sudo apt install software-properties-common apt-transport-https curl -y
 curl -sSL https://packages.microsoft.com/keys/microsoft.asc | sudo apt-key add -
 sudo add-apt-repository "deb [arch=amd64] https://packages.microsoft.com/repos/vscode stable main"
-exec -l $SHELL
 sudo apt-get update
 sudo apt install code
 sudo apt install hcxdumptool -y
@@ -50,3 +49,4 @@ sudo apt-get install hamster-sidejack -y
 sudo apt-get update
 sudo apt-get autoclean
 sudo apt-get autoremove
+exec -l $SHELL
