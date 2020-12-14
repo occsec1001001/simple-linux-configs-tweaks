@@ -7,14 +7,12 @@ sudo apt-get upgrade -y
 rm -r Music/
 rm -r Templates/
 rm -r Videos/
-rm -r Pictures/
+#rm -r Pictures/
 rm -r Public/
-mkdir git
 mkdir general
 mkdir Documents/htb
 mkdir Documents/vhl
 mkdir Documents/projects
-mkdir insync
 sudo setxkbmap -layout gb
 sudo apt-get update -y
 sudo apt install -y openvpn dialog python3-pip python3-setuptools
@@ -30,8 +28,25 @@ sudo git clone https://github.com/leebaird/discover /opt/discover
 sudo git clone https://github.com/21y4d/nmapAutomator.git /opt/nmapAutomator
 sudo git clone https://github.com/TheRook/subbrute.git /opt/subbrute
 sudo git clone https://github.com/laramies/theHarvester.git /opt/theHarvester
-git clone --depth=1 https://github.com/amix/vimrc.git ~/.vim_runtime
-sh ~/.vim_runtime/install_awesome_vimrc.sh
+sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys ACCAF35C
+sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys ACCAF35C
+sudo touch /etc/apt/sources.list.d/insync.list
+sudo apt-get update
+sudo apt-get install insync -y
+sudo echo "deb http://apt.insync.io/debian buster non-free contrib" > /etc/apt/sources.list.d/insync.list
+sudo wget -O vmware.bundle https://www.vmware.com/go/getworkstation-linux
+sudo chmod 777 vmware.bundle
+sudo ./vmware.bundle
+sudo dpkg -i Downloads/Nessus-8.13.0-debian6_amd64.deb
+sudo rm Downloads/Nessus-8.13.0-debian6_amd64.deb
+sudo apt-get install linux headers-$(uname -r)
+sudo usermod -a -G sudo occami
+sudo apt-get install Terminator -y
+sudo mkdir -p ~/.config/terminator/plugins
+sudo wget https://raw.githubusercontent.com/msudgh/terminator-search/master/terminator_search.py
+sudo mv terminator_search.py ~/.config/terminator/plugins/terminator_search.py
+#git clone --depth=1 https://github.com/amix/vimrc.git ~/.vim_runtime
+#sh ~/.vim_runtime/install_awesome_vimrc.sh
 sudo git clone https://github.com/vulnersCom/nmap-vulners.git /usr/share/nmap/scripts/
 sudo apt-get install npm -y
 #sudo systemctl enable postgresql
@@ -48,9 +63,11 @@ sudo apt install hcxtools -y
 sudo apt-get install ferret -y
 sudo apt-get install hamster-sidejack -y
 sudo apt-get install linux-headers-$(uname -r)
-sudo apt-get install hcxdumptool\n
-sudo apt-get install hcxtools
+sudo apt-get install hcxdumptool -y
+sudo apt-get install hcxtools -y
 sudo apt-get update
-sudo apt-get autoclean
-sudo apt-get autoremove
+sudo apt-get upgrade all -y
+sudo apt-get autoclean -y
+sudo apt-get autoremove -y
 exec -l $SHELL
+
