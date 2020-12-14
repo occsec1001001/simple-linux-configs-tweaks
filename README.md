@@ -1,1 +1,1 @@
-# simple-linux-configs & tweaks
+#### simple linux set up, configs, & tweaks
