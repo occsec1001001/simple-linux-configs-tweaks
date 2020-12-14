@@ -70,4 +70,5 @@ sudo apt-get upgrade all -y
 sudo apt-get autoclean -y
 sudo apt-get autoremove -y
 exec -l $SHELL
-
+touch ~/.hushlogin
+clear
